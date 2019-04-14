@@ -1,0 +1,64 @@
+npm ls -g --depth 0//查看安装哪些包
+bootstrap3.3.7地址
+https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.css
+jquery3.3.1地址
+https://cdn.bootcss.com/jquery/3.3.1/jquery.js
+
+faststone使用
+自定义吸管alt+j
+
+代码调试
+Element：主要是用来调试网页中的html标签代码和css样式代码
+
+    Network：查看网页的http通信情况，包括Method、Type、Timeline（网络请求的时间响应情况）等
+
+    Source:查看JS文件、调试JS代码
+
+    Timeline:查看js的执行时间，页面元素渲染时间等
+
+    Profiles：用来查看网页的性能，比如CPU和内存消耗
+
+    Resources：用来查看加载的各种资源文件，比如js、css、图片等
+
+    Audits：可以分析当前网页，可以快速的分析出哪些资源被使用、哪些资源没有使用，然后提出建议
+
+    Console：可以查看错误信息、打印调试信息、调试js代码，还可以当作Javascript API查看
+
+
+PS使用
+
+简单切图
+1.选区
+2.ctrl+c 剪切
+3.ctrl+n 回车
+4.ctrl+v 粘贴
+5.ctrl+alt+shift+s 保存为web格式
+6.ctrl+t 选中空白区域拖中后拉，覆盖不想要的内容
+
+png透明 不支持动画 损耗颜色压缩
+GIF透明 支持动画 损耗颜色压缩
+jpg不支持透明 损耗质量压缩
+
+快捷键
+
+空格 抓手工具
+
+Alt + 鼠标中键  缩放
+
+Ctrl + 1 显示比例为100%
+
+Ctrl + R	 打开关闭参考线
+
+Ctrl + alt + shift + E 盖印
+
+Alt + s + t 调整选区
+
+选区后Ctrl +t 拖动覆盖；
+
+慕课网
+547096472@qq.com
+密码
+ysy1219
+
+邮箱密码
+ysy921219
