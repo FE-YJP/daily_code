@@ -1,0 +1,341 @@
+复制功能
+ function copyArticle(event) {
+        const range = document.createRange();
+        range.selectNode(document.getElementById('content'));
+
+        const selection = window.getSelection();
+        if (selection.rangeCount > 0) selection.removeAllRanges();
+        selection.addRange(range);
+        document.execCommand('copy');
+        msg_alert("{:lang('复制成功')}！");
+    }
+
+    document.getElementById('copyBT').addEventListener('click', copyArticle, false);
+
+超出文本省略
+width:4.24rem;
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap;
+
+神兽保佑无bug
+/** 
+* 
+*----------Dragon be here!----------/ 
+* 　　　┏┓　　　┏┓ 
+* 　　┏┛┻━━━┛┻┓ 
+* 　　┃　　　　　　　┃ 
+* 　　┃　　　━　　　┃ 
+* 　　┃　┳┛　┗┳　┃ 
+* 　　┃　　　　　　　┃ 
+* 　　┃　　　┻　　　┃ 
+* 　　┃　　　　　　　┃ 
+* 　　┗━┓　　　┏━┛ 
+* 　　　　┃　　　┃神兽保佑 
+* 　　　　┃　　　┃代码无BUG！ 
+* 　　　　┃　　　┗━━━┓ 
+* 　　　　┃　　　　　　　┣┓ 
+* 　　　　┃　　　　　　　┏┛ 
+* 　　　　┗┓┓┏━┳┓┏┛ 
+* 　　　　　┃┫┫　┃┫┫ 
+* 　　　　　┗┻┛　┗┻┛ 
+* ━━━━━━神兽出没━━━━━━
+*/
+
+
+获取时间戳
+new Date().getTime()
+new Date().valueOf()
+时间戳转换为日期
+new Date(parseInt(1555571581447)).toLocaleString()
+
+//vue记录上一页位置
+
+第一步 保存上一页的状态
+<keep-alive include="home">
+      <router-view/>    
+</keep-alive>
+第二步记录滚动条位置
+ <div id="body">
+    <router-link tag="div" class="list" v-for="index in 10" :key="index" to="/about">
+    
+    </router-link>
+  </div>
+ data(){
+    return{
+      homeTop : 0,
+    }
+  },
+activated(){
+      // do something
+      console.log(this.homeTop);
+      document.getElementById('body').scrollTop = this.homeTop || 0
+  },
+  beforeRouteLeave (to, from, next) {
+      // console.log('leave')
+      let app = document.getElementById('body')
+      this.homeTop = app.scrollTop || 0;
+      console.log(this.homeTop);
+      next()
+  },
+
+
+
+
+
+### js读取文件、图片
+
+#### html
+
+```
+<input type="file" onchange="previewFile()"><br>
+<img src="" height="200" alt="Image preview...">
+```
+
+#### javascript
+
+```
+javascript
+function previewFile() {
+  var preview = document.querySelector('img');
+  var file    = document.querySelector('input[type=file]').files[0];
+  var reader  = new FileReader();
+
+  reader.addEventListener("load", function () {
+    preview.src = reader.result;
+  }, false);
+
+  if (file) {
+    reader.readAsDataURL(file);
+  }
+}
+```
+
+
+iscroll在手机上滑动不流畅，很卡，如何解决？
+iscroll5里面增加参数disablePointer: true，disableTouch:false,disableMouse:fasle或者head里面加<script>window.PointerEvent = undefined</script>
+
+
+
+//兼容----->
+linear-gradient背景色兼容从左至右
+background: -webkit-linear-gradient(left, rgba(232,87,227,1),rgba(225,139,222,1)); 
+background: -o-linear-gradient(right, rgba(232,87,227,1),rgba(225,139,222,1)); 
+background: -moz-linear-gradient(right, rgba(232,87,227,1),rgba(225,139,222,1)); 
+background:linear-gradient(to right, rgba(232,87,227,1),rgba(225,139,222,1));
+
+input number去掉上下箭头
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { -webkit-appearance: none; }
+input[type="number"]{ -moz-appearance: textfield; }
+
+怪异盒模型
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-o-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+//----->兼容
+
+
+支付代码段---->
+
+ <div class="ftc_wzsf" >
+            <div class="srzfmm_box">
+                <div class="qsrzfmm_bt clear_wl">
+                    <img src="__MOBILE__/images/xx_03.jpg" class="tx close fl">
+                    <span class="fl">{:lang('请输入支付密码')}</span></div>
+                <div class="zfmmxx_shop">
+                    <div class="mz">{:lang('支付')}:  {$payee['nickname']}</div>
+                    <div class="zhifu_price">88.88</div></div>
+                <ul class="mm_box">
+                    <li></li><li></li><li></li><li></li><li></li><li></li>
+                </ul>
+           
+            </div>
+            <div class="numb_box">
+                <div class="xiaq_tb">
+                    <img src="__MOBILE__/images/jftc_14.jpg" height="10"></div>
+                <ul class="nub_ggg">
+                    <li><a href="javascript:void(0);" class="zf_num">1</a></li>
+                    <li><a href="javascript:void(0);" class="zj_x zf_num">2</a></li>
+                    <li><a href="javascript:void(0);" class="zf_num">3</a></li>
+                    <li><a href="javascript:void(0);" class="zf_num">4</a></li>
+                    <li><a href="javascript:void(0);" class="zj_x zf_num">5</a></li>
+                    <li><a href="javascript:void(0);" class="zf_num">6</a></li>
+                    <li><a href="javascript:void(0);" class="zf_num">7</a></li>
+                    <li><a href="javascript:void(0);" class="zj_x zf_num">8</a></li>
+                    <li><a href="javascript:void(0);" class="zf_num">9</a></li>
+                    <li><a href="javascript:void(0);" class="zf_empty">{:lang('清空')}</a></li>
+                    <li><a href="javascript:void(0);" class="zj_x zf_num">0</a></li>
+                    <li><a href="javascript:void(0);" class="zf_del">{:lang('删除')}</a></li>
+                </ul>
+            </div>
+            <div class="hbbj"></div>
+        </div>
+
+
+
+$(".close").click(function(){
+            $(".ftc_wzsf").hide();
+            $(".mm_box li").removeClass("mmdd");
+            $(".mm_box li").attr("data","");
+            i = 0;
+        });
+            //数字显示隐藏
+        $(".xiaq_tb").click(function(){
+            $(".numb_box").slideUp(500);
+        });
+        $(".mm_box").click(function(){
+            $(".numb_box").slideDown(500);
+        });
+            //----
+        var i = 0;
+        $(".nub_ggg li .zf_num").click(function(){
+            if(i<6){
+                $(".mm_box li").eq(i).addClass("mmdd");
+                $(".mm_box li").eq(i).attr("data",$(this).text());
+                i++
+                if (i==6) {
+                  setTimeout(function(){
+                        var pwd = "";
+                        $(".mm_box li").each(function(){
+                            pwd += $(this).attr("data");
+                         });
+
+                      //ajax提交密码以及参数
+                      var post_data=Getvalue();//获取上面的参数
+          					  $.ajax({
+          						  url:'/mobile/money_out/doTransfer',
+          						  type:'post',
+          						  data:{'post_data':post_data,'pwd':pwd},
+          						  datatype:'json',
+          						  success:function (mes) {
+          							  if(mes.status == 1){
+                              msg_alert(mes.msg,mes.url);
+                              $(".ftc_wzsf").hide();
+                              $(".mm_box li").removeClass("mmdd");
+                              $(".mm_box li").attr("data","");
+                              i = 0;
+          							  }else{
+                              msg_alert(mes.msg);
+                              $(".mm_box li").removeClass("mmdd");
+                              $(".mm_box li").attr("data","");
+                              i = 0;
+          							  }
+                        }
+          					  })
+                    },100);
+              };
+            }else{
+              $(".numb_box").css('display',"none");
+            }
+
+        });
+            
+        $(".nub_ggg li .zf_del").click(function(){
+            if(i>0){
+                i--
+                $(".mm_box li").eq(i).removeClass("mmdd");
+                $(".mm_box li").eq(i).attr("data","");
+            }
+        });
+
+        $(".nub_ggg li .zf_empty").click(function(){
+            $(".mm_box li").removeClass("mmdd");
+            $(".mm_box li").attr("data","");
+            i = 0;
+        });
+
+
+
+
+
+
+
+.ftc_wzsf { display:none; width: 100%; height: 100%; position: fixed; z-index: 999; top: 0; left: 0; min-width: 3.4rem; max-width: 12.8rem; color: #000;}
+.ftc_wzsf .hbbj { width: 100%; height: 100%; position: absolute; z-index: 8; background: #000; opacity: 0.4; top: 0; left: 0; }
+.ftc_wzsf .srzfmm_box { position: absolute; z-index: 10; background: #f8f8f8; width: 88%; left: 50%; margin-left: -44%; top: 20%; }
+.qsrzfmm_bt { font-size: .32rem; border-bottom: 1px solid #c9daca; overflow: hidden; }
+.qsrzfmm_bt a { display: block; width: 10%; padding: .2rem 0; text-align: center; }
+.qsrzfmm_bt img.tx { width: 10%; padding: .2rem 0; }
+.qsrzfmm_bt span { padding: .4rem 0.1rem; }
+.zfmmxx_shop { text-align: center; font-size: .24rem; padding: .2rem 0; overflow: hidden; }
+.zfmmxx_shop .mz { font-size: .28rem; float: left; width: 100%; }
+.zfmmxx_shop .zhifu_price { font-size: .48rem; float: left; width: 100%; }
+.ml5 { margin-left: 0.1rem; }
+.mm_box { width: 89%; margin: .2rem auto; height: .8rem; overflow: hidden; border: 1px solid #bebebe; }
+.mm_box li { border-right: 1px solid #efefef; height: .8rem; float: left; width: 16.3%; background: #FFF; }
+.mm_box li.mmdd{ background:#FFF url(../images/dd_03.jpg) center no-repeat ; background-size:25%;}
+.mm_box li:last-child { border-right: none; }
+.xiaq_tb { padding: 0.1rem 0; text-align: center; border-top: 1px solid #dadada; }
+.numb_box { position: absolute; z-index: 10; background: #f5f5f5; width: 100%; bottom: 0px; }
+.nub_ggg { border: 1px solid #dadada; overflow: hidden; border-bottom: none; }
+.nub_ggg li { width: 33.3333%; border-bottom: 1px solid #dadada; float: left; text-align: center; font-size: 0.44rem; }
+.nub_ggg li a { display: block; color: #000; height: 1.0rem; line-height: 1.0rem; overflow: hidden; }
+.nub_ggg li a:active  { background: #e0e0e0;}
+.nub_ggg li a.zj_x { border-left: 1px solid #dadada; border-right: 1px solid #dadada; }
+.nub_ggg li span { display: block; color: #e0e0e0; background: #e0e0e0; height: 1.0rem; line-height: 1.0rem; overflow: hidden; }
+.nub_ggg li span.del img { width: 30%; }
+.fh_but{ position:absolute; right:0px; top:.24rem; font-size:.28rem; color:#20d81f;}
+.spxx_shop{ background:#FFF; margin-left:4.35%; border-top:1px solid #dfdfdd; padding:.2rem 0; }
+.spxx_shop td{ color:#7b7b7b; font-size:.28rem; padding:.2rem 0;}
+.mlr_pm{margin-right:4.35%;}
+---->支付代码段
+
+
+
+
+html下纯JS实现图片压缩、预览、图片Base64转换
+
+
+function ImgToBase64(file, maxLen, callBack) {
+    var img = new Image();
+
+    var reader = new FileReader();//读取客户端上的文件
+    reader.onload = function () {
+        var url = reader.result;//读取到的文件内容.这个属性只在读取操作完成之后才有效,并且数据的格式取决于读取操作是由哪个方法发起的.所以必须使用reader.onload，
+        img.src = url;//reader读取的文件内容是base64,利用这个url就能实现上传前预览图片
+    };
+    img.onload = function () {
+        //生成比例
+        var width = img.width, height = img.height;
+        //计算缩放比例
+        var rate = 1;
+        if (width >= height) {
+            if (width > maxLen) {
+                rate = maxLen / width;
+            }
+        } else {
+            if (height > maxLen) {
+                rate = maxLen / height;
+            }
+        };
+        img.width = width * rate;
+        img.height = height * rate;
+        //生成canvas
+        var canvas = document.createElement("canvas");
+        var ctx = canvas.getContext("2d");
+        canvas.width = img.width;
+        canvas.height = img.height;
+        ctx.drawImage(img, 0, 0, img.width, img.height);
+        var base64 = canvas.toDataURL('image/jpeg', 0.9);
+        callBack(base64);
+    };
+    reader.readAsDataURL(file);
+}
+
+
+
+调用方式：
+$(function () {
+        $("#img").change(function () {
+            var file = $(this)[0].files[0];//获取input file控件选择的文件
+            
+            ImgToBase64(file, 720, function (base64) {
+                $("#img1")[0].src = base64;//预览页面上预留一个img元素，载入base64
+                $("#img1")[0].width = 300;//设定宽高，不然会自动按照压缩过的图片宽高设定，有可能超出预想的范围。
+　　　　　　　　　　　//直接利用ajax上传base64到服务器，完毕
+            });
+        })
+    })
