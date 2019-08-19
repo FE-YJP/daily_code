@@ -1,4 +1,4 @@
-¸´ÖÆ¹¦ÄÜ
+å¤åˆ¶åŠŸèƒ½
  function copyArticle(event) {
         const range = document.createRange();
         range.selectNode(document.getElementById('content'));
@@ -7,55 +7,55 @@
         if (selection.rangeCount > 0) selection.removeAllRanges();
         selection.addRange(range);
         document.execCommand('copy');
-        msg_alert("{:lang('¸´ÖÆ³É¹¦')}£¡");
+        msg_alert("{:lang('å¤åˆ¶æˆåŠŸ')}ï¼");
     }
 
     document.getElementById('copyBT').addEventListener('click', copyArticle, false);
 
-³¬³öÎÄ±¾Ê¡ÂÔ
+è¶…å‡ºæ–‡æœ¬çœç•¥
 width:4.24rem;
 overflow:hidden;
 text-overflow:ellipsis;
 white-space:nowrap;
 
-ÉñÊŞ±£ÓÓÎŞbug
+ç¥å…½ä¿ä½‘æ— bug
 /** 
 * 
 *----------Dragon be here!----------/ 
-* ¡¡¡¡¡¡©³©·¡¡¡¡¡¡©³©· 
-* ¡¡¡¡©³©¿©ß©¥©¥©¥©¿©ß©· 
-* ¡¡¡¡©§¡¡¡¡¡¡¡¡¡¡¡¡¡¡©§ 
-* ¡¡¡¡©§¡¡¡¡¡¡©¥¡¡¡¡¡¡©§ 
-* ¡¡¡¡©§¡¡©×©¿¡¡©»©×¡¡©§ 
-* ¡¡¡¡©§¡¡¡¡¡¡¡¡¡¡¡¡¡¡©§ 
-* ¡¡¡¡©§¡¡¡¡¡¡©ß¡¡¡¡¡¡©§ 
-* ¡¡¡¡©§¡¡¡¡¡¡¡¡¡¡¡¡¡¡©§ 
-* ¡¡¡¡©»©¥©·¡¡¡¡¡¡©³©¥©¿ 
-* ¡¡¡¡¡¡¡¡©§¡¡¡¡¡¡©§ÉñÊŞ±£ÓÓ 
-* ¡¡¡¡¡¡¡¡©§¡¡¡¡¡¡©§´úÂëÎŞBUG£¡ 
-* ¡¡¡¡¡¡¡¡©§¡¡¡¡¡¡©»©¥©¥©¥©· 
-* ¡¡¡¡¡¡¡¡©§¡¡¡¡¡¡¡¡¡¡¡¡¡¡©Ç©· 
-* ¡¡¡¡¡¡¡¡©§¡¡¡¡¡¡¡¡¡¡¡¡¡¡©³©¿ 
-* ¡¡¡¡¡¡¡¡©»©·©·©³©¥©×©·©³©¿ 
-* ¡¡¡¡¡¡¡¡¡¡©§©Ï©Ï¡¡©§©Ï©Ï 
-* ¡¡¡¡¡¡¡¡¡¡©»©ß©¿¡¡©»©ß©¿ 
-* ©¥©¥©¥©¥©¥©¥ÉñÊŞ³öÃ»©¥©¥©¥©¥©¥©¥
+* ã€€ã€€ã€€â”â”“ã€€ã€€ã€€â”â”“ 
+* ã€€ã€€â”â”›â”»â”â”â”â”›â”»â”“ 
+* ã€€ã€€â”ƒã€€ã€€ã€€ã€€ã€€ã€€ã€€â”ƒ 
+* ã€€ã€€â”ƒã€€ã€€ã€€â”ã€€ã€€ã€€â”ƒ 
+* ã€€ã€€â”ƒã€€â”³â”›ã€€â”—â”³ã€€â”ƒ 
+* ã€€ã€€â”ƒã€€ã€€ã€€ã€€ã€€ã€€ã€€â”ƒ 
+* ã€€ã€€â”ƒã€€ã€€ã€€â”»ã€€ã€€ã€€â”ƒ 
+* ã€€ã€€â”ƒã€€ã€€ã€€ã€€ã€€ã€€ã€€â”ƒ 
+* ã€€ã€€â”—â”â”“ã€€ã€€ã€€â”â”â”› 
+* ã€€ã€€ã€€ã€€â”ƒã€€ã€€ã€€â”ƒç¥å…½ä¿ä½‘ 
+* ã€€ã€€ã€€ã€€â”ƒã€€ã€€ã€€â”ƒä»£ç æ— BUGï¼ 
+* ã€€ã€€ã€€ã€€â”ƒã€€ã€€ã€€â”—â”â”â”â”“ 
+* ã€€ã€€ã€€ã€€â”ƒã€€ã€€ã€€ã€€ã€€ã€€ã€€â”£â”“ 
+* ã€€ã€€ã€€ã€€â”ƒã€€ã€€ã€€ã€€ã€€ã€€ã€€â”â”› 
+* ã€€ã€€ã€€ã€€â”—â”“â”“â”â”â”³â”“â”â”› 
+* ã€€ã€€ã€€ã€€ã€€â”ƒâ”«â”«ã€€â”ƒâ”«â”« 
+* ã€€ã€€ã€€ã€€ã€€â”—â”»â”›ã€€â”—â”»â”› 
+* â”â”â”â”â”â”ç¥å…½å‡ºæ²¡â”â”â”â”â”â”
 */
 
 
-»ñÈ¡Ê±¼ä´Á
+è·å–æ—¶é—´æˆ³
 new Date().getTime()
 new Date().valueOf()
-Ê±¼ä´Á×ª»»ÎªÈÕÆÚ
+æ—¶é—´æˆ³è½¬æ¢ä¸ºæ—¥æœŸ
 new Date(parseInt(1555571581447)).toLocaleString()
 
-//vue¼ÇÂ¼ÉÏÒ»Ò³Î»ÖÃ
+//vueè®°å½•ä¸Šä¸€é¡µä½ç½®
 
-µÚÒ»²½ ±£´æÉÏÒ»Ò³µÄ×´Ì¬
+ç¬¬ä¸€æ­¥ ä¿å­˜ä¸Šä¸€é¡µçš„çŠ¶æ€
 <keep-alive include="home">
       <router-view/>    
 </keep-alive>
-µÚ¶ş²½¼ÇÂ¼¹ö¶¯ÌõÎ»ÖÃ
+ç¬¬äºŒæ­¥è®°å½•æ»šåŠ¨æ¡ä½ç½®
  <div id="body">
     <router-link tag="div" class="list" v-for="index in 10" :key="index" to="/about">
     
@@ -83,7 +83,7 @@ activated(){
 
 
 
-### js¶ÁÈ¡ÎÄ¼ş¡¢Í¼Æ¬
+### jsè¯»å–æ–‡ä»¶ã€å›¾ç‰‡
 
 #### html
 
@@ -112,41 +112,41 @@ function previewFile() {
 ```
 
 
-iscrollÔÚÊÖ»úÉÏ»¬¶¯²»Á÷³©£¬ºÜ¿¨£¬ÈçºÎ½â¾ö£¿
-iscroll5ÀïÃæÔö¼Ó²ÎÊıdisablePointer: true£¬disableTouch:false,disableMouse:fasle»òÕßheadÀïÃæ¼Ó<script>window.PointerEvent = undefined</script>
+iscrollåœ¨æ‰‹æœºä¸Šæ»‘åŠ¨ä¸æµç•…ï¼Œå¾ˆå¡ï¼Œå¦‚ä½•è§£å†³ï¼Ÿ
+iscroll5é‡Œé¢å¢åŠ å‚æ•°disablePointer: trueï¼ŒdisableTouch:false,disableMouse:fasleæˆ–è€…headé‡Œé¢åŠ <script>window.PointerEvent = undefined</script>
 
 
 
-//¼æÈİ----->
-linear-gradient±³¾°É«¼æÈİ´Ó×óÖÁÓÒ
+//å…¼å®¹----->
+linear-gradientèƒŒæ™¯è‰²å…¼å®¹ä»å·¦è‡³å³
 background: -webkit-linear-gradient(left, rgba(232,87,227,1),rgba(225,139,222,1)); 
 background: -o-linear-gradient(right, rgba(232,87,227,1),rgba(225,139,222,1)); 
 background: -moz-linear-gradient(right, rgba(232,87,227,1),rgba(225,139,222,1)); 
 background:linear-gradient(to right, rgba(232,87,227,1),rgba(225,139,222,1));
 
-input numberÈ¥µôÉÏÏÂ¼ıÍ·
+input numberå»æ‰ä¸Šä¸‹ç®­å¤´
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button { -webkit-appearance: none; }
 input[type="number"]{ -moz-appearance: textfield; }
 
-¹ÖÒìºĞÄ£ĞÍ
+æ€ªå¼‚ç›’æ¨¡å‹
 -moz-box-sizing: border-box;
 -webkit-box-sizing: border-box;
 -o-box-sizing: border-box;
 -ms-box-sizing: border-box;
 box-sizing: border-box;
-//----->¼æÈİ
+//----->å…¼å®¹
 
 
-Ö§¸¶´úÂë¶Î---->
+æ”¯ä»˜ä»£ç æ®µ---->
 
  <div class="ftc_wzsf" >
             <div class="srzfmm_box">
                 <div class="qsrzfmm_bt clear_wl">
                     <img src="__MOBILE__/images/xx_03.jpg" class="tx close fl">
-                    <span class="fl">{:lang('ÇëÊäÈëÖ§¸¶ÃÜÂë')}</span></div>
+                    <span class="fl">{:lang('è¯·è¾“å…¥æ”¯ä»˜å¯†ç ')}</span></div>
                 <div class="zfmmxx_shop">
-                    <div class="mz">{:lang('Ö§¸¶')}:  {$payee['nickname']}</div>
+                    <div class="mz">{:lang('æ”¯ä»˜')}:  {$payee['nickname']}</div>
                     <div class="zhifu_price">88.88</div></div>
                 <ul class="mm_box">
                     <li></li><li></li><li></li><li></li><li></li><li></li>
@@ -166,9 +166,9 @@ box-sizing: border-box;
                     <li><a href="javascript:void(0);" class="zf_num">7</a></li>
                     <li><a href="javascript:void(0);" class="zj_x zf_num">8</a></li>
                     <li><a href="javascript:void(0);" class="zf_num">9</a></li>
-                    <li><a href="javascript:void(0);" class="zf_empty">{:lang('Çå¿Õ')}</a></li>
+                    <li><a href="javascript:void(0);" class="zf_empty">{:lang('æ¸…ç©º')}</a></li>
                     <li><a href="javascript:void(0);" class="zj_x zf_num">0</a></li>
-                    <li><a href="javascript:void(0);" class="zf_del">{:lang('É¾³ı')}</a></li>
+                    <li><a href="javascript:void(0);" class="zf_del">{:lang('åˆ é™¤')}</a></li>
                 </ul>
             </div>
             <div class="hbbj"></div>
@@ -182,7 +182,7 @@ $(".close").click(function(){
             $(".mm_box li").attr("data","");
             i = 0;
         });
-            //Êı×ÖÏÔÊ¾Òş²Ø
+            //æ•°å­—æ˜¾ç¤ºéšè—
         $(".xiaq_tb").click(function(){
             $(".numb_box").slideUp(500);
         });
@@ -203,8 +203,8 @@ $(".close").click(function(){
                             pwd += $(this).attr("data");
                          });
 
-                      //ajaxÌá½»ÃÜÂëÒÔ¼°²ÎÊı
-                      var post_data=Getvalue();//»ñÈ¡ÉÏÃæµÄ²ÎÊı
+                      //ajaxæäº¤å¯†ç ä»¥åŠå‚æ•°
+                      var post_data=Getvalue();//è·å–ä¸Šé¢çš„å‚æ•°
           					  $.ajax({
           						  url:'/mobile/money_out/doTransfer',
           						  type:'post',
@@ -281,26 +281,26 @@ $(".close").click(function(){
 .spxx_shop{ background:#FFF; margin-left:4.35%; border-top:1px solid #dfdfdd; padding:.2rem 0; }
 .spxx_shop td{ color:#7b7b7b; font-size:.28rem; padding:.2rem 0;}
 .mlr_pm{margin-right:4.35%;}
----->Ö§¸¶´úÂë¶Î
+---->æ”¯ä»˜ä»£ç æ®µ
 
 
 
 
-htmlÏÂ´¿JSÊµÏÖÍ¼Æ¬Ñ¹Ëõ¡¢Ô¤ÀÀ¡¢Í¼Æ¬Base64×ª»»
+htmlä¸‹çº¯JSå®ç°å›¾ç‰‡å‹ç¼©ã€é¢„è§ˆã€å›¾ç‰‡Base64è½¬æ¢
 
 
 function ImgToBase64(file, maxLen, callBack) {
     var img = new Image();
 
-    var reader = new FileReader();//¶ÁÈ¡¿Í»§¶ËÉÏµÄÎÄ¼ş
+    var reader = new FileReader();//è¯»å–å®¢æˆ·ç«¯ä¸Šçš„æ–‡ä»¶
     reader.onload = function () {
-        var url = reader.result;//¶ÁÈ¡µ½µÄÎÄ¼şÄÚÈİ.Õâ¸öÊôĞÔÖ»ÔÚ¶ÁÈ¡²Ù×÷Íê³ÉÖ®ºó²ÅÓĞĞ§,²¢ÇÒÊı¾İµÄ¸ñÊ½È¡¾öÓÚ¶ÁÈ¡²Ù×÷ÊÇÓÉÄÄ¸ö·½·¨·¢ÆğµÄ.ËùÒÔ±ØĞëÊ¹ÓÃreader.onload£¬
-        img.src = url;//reader¶ÁÈ¡µÄÎÄ¼şÄÚÈİÊÇbase64,ÀûÓÃÕâ¸öurl¾ÍÄÜÊµÏÖÉÏ´«Ç°Ô¤ÀÀÍ¼Æ¬
+        var url = reader.result;//è¯»å–åˆ°çš„æ–‡ä»¶å†…å®¹.è¿™ä¸ªå±æ€§åªåœ¨è¯»å–æ“ä½œå®Œæˆä¹‹åæ‰æœ‰æ•ˆ,å¹¶ä¸”æ•°æ®çš„æ ¼å¼å–å†³äºè¯»å–æ“ä½œæ˜¯ç”±å“ªä¸ªæ–¹æ³•å‘èµ·çš„.æ‰€ä»¥å¿…é¡»ä½¿ç”¨reader.onloadï¼Œ
+        img.src = url;//readerè¯»å–çš„æ–‡ä»¶å†…å®¹æ˜¯base64,åˆ©ç”¨è¿™ä¸ªurlå°±èƒ½å®ç°ä¸Šä¼ å‰é¢„è§ˆå›¾ç‰‡
     };
     img.onload = function () {
-        //Éú³É±ÈÀı
+        //ç”Ÿæˆæ¯”ä¾‹
         var width = img.width, height = img.height;
-        //¼ÆËãËõ·Å±ÈÀı
+        //è®¡ç®—ç¼©æ”¾æ¯”ä¾‹
         var rate = 1;
         if (width >= height) {
             if (width > maxLen) {
@@ -313,7 +313,7 @@ function ImgToBase64(file, maxLen, callBack) {
         };
         img.width = width * rate;
         img.height = height * rate;
-        //Éú³Écanvas
+        //ç”Ÿæˆcanvas
         var canvas = document.createElement("canvas");
         var ctx = canvas.getContext("2d");
         canvas.width = img.width;
@@ -327,15 +327,18 @@ function ImgToBase64(file, maxLen, callBack) {
 
 
 
-µ÷ÓÃ·½Ê½£º
+è°ƒç”¨æ–¹å¼ï¼š
 $(function () {
         $("#img").change(function () {
-            var file = $(this)[0].files[0];//»ñÈ¡input file¿Ø¼şÑ¡ÔñµÄÎÄ¼ş
+            var file = $(this)[0].files[0];//è·å–input fileæ§ä»¶é€‰æ‹©çš„æ–‡ä»¶
             
             ImgToBase64(file, 720, function (base64) {
-                $("#img1")[0].src = base64;//Ô¤ÀÀÒ³ÃæÉÏÔ¤ÁôÒ»¸öimgÔªËØ£¬ÔØÈëbase64
-                $("#img1")[0].width = 300;//Éè¶¨¿í¸ß£¬²»È»»á×Ô¶¯°´ÕÕÑ¹Ëõ¹ıµÄÍ¼Æ¬¿í¸ßÉè¶¨£¬ÓĞ¿ÉÄÜ³¬³öÔ¤ÏëµÄ·¶Î§¡£
-¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡//Ö±½ÓÀûÓÃajaxÉÏ´«base64µ½·şÎñÆ÷£¬Íê±Ï
+                $("#img1")[0].src = base64;//é¢„è§ˆé¡µé¢ä¸Šé¢„ç•™ä¸€ä¸ªimgå…ƒç´ ï¼Œè½½å…¥base64
+                $("#img1")[0].width = 300;//è®¾å®šå®½é«˜ï¼Œä¸ç„¶ä¼šè‡ªåŠ¨æŒ‰ç…§å‹ç¼©è¿‡çš„å›¾ç‰‡å®½é«˜è®¾å®šï¼Œæœ‰å¯èƒ½è¶…å‡ºé¢„æƒ³çš„èŒƒå›´ã€‚
+ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€//ç›´æ¥åˆ©ç”¨ajaxä¸Šä¼ base64åˆ°æœåŠ¡å™¨ï¼Œå®Œæ¯•
             });
         })
     })
+    
+//æ—¶é—´æˆ³è½¬æ¢æˆæ—¶é—´
+new Date(æ—¶é—´æˆ³).toLocaleString("chinese",{hour12:false}).replace(/\//g,"-")
