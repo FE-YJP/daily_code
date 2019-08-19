@@ -2,13 +2,12 @@
 #### 只需把config/index.js中的productionSourceMap: true改为productionSourceMap: false即可  
 ### vue打包优化  
 #### https://segmentfault.com/a/1190000012249890
-### 解决数据层级太多更不能实时更新视图问题 this.$forceUpdate();
-#### 因为数据层次太多，render函数没有自动更新，需手动强制刷新。
+### 解决数据层级太多更不能实时更新视图问题 因为数据层次太多，render函数没有自动更新，需手动强制刷新this.$forceUpdate()
 ### 如何配置404页面详细
 https://juejin.im/post/5b019ad7f265da0ba567d259
 ### 404页面的设置简单配置
-#### 如果SPA的路由表是固定的，那么配置404页面就变得非常的简单。只需要在路由表中添加一个路径为404的路由，同时在路由表的最底部配置一个路径为*的路由，重定向至404路由即可。
-#### （由于路由表是由上至下匹配的，一定要将任意匹配规则至于最底部，否则至于此路由规则下的路由将全部跳转至404，无法正确匹配。）
+ 如果SPA的路由表是固定的，那么配置404页面就变得非常的简单。只需要在路由表中添加一个路径为404的路由，同时在路由表的最底部配置一个路径为*的路由，重定向至404路由即可。
+（由于路由表是由上至下匹配的，一定要将任意匹配规则至于最底部，否则至于此路由规则下的路由将全部跳转至404，无法正确匹配。）
 #### 
 ```
 // router.js  
@@ -73,3 +72,27 @@ loop模式在与free模式同用时会产生抖动，因为free模式下没有�
 在原本基础上复制若干个slide，可是在vue的v-for中时，异步加载的数据都还没有返回时，就先加载了Swiper组件并复制了sliper
 
 解决办法：利用v-if的属性，v-if=加载列表.length，确保异步加载的数据已经返回后，再加载swiper组件
+
+### 使用Sass
+npm install --save-dev sass-loader //sass-loader依赖于node-sass
+npm install --save-dev node-sass
+//build/webpack.base.conf/
+{
+  test:/\.scss/,
+  loaders:["style","css","sass"]
+},
+### 错误配置页
+import Error from '@/views/Error.vue'
+{
+     path: '*',
+     component: Error
+},
+
+//摘自https://blog.csdn.net/m0_38069630/article/details/79172700
+
+### proxy代理
+https://www.jb51.net/article/138539.htm
+https://www.cnblogs.com/huoerheaven/p/9701125.html
+
+### 移动端适配方案2
+https://www.jianshu.com/p/3f38841515cd
